@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #890000;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;  
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+
+    background-color: black;
+    width: 250px;
+    height: 610px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+
+    transition: width 0.1s, height 0.1s ;
+}
+
+#login > #imagem {
+    display: block;
+    background-image: url(imagens/vermelho.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+#login > #formulario {
+    display: block;
+    padding: 10px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+#formulario > p {
+    font-size: 1em;
+    color: white;
+}
+
+form > .campo {
+    background-color: #890000;
+    border: 2px solid #890000;
+    border-radius: 8px;
+    margin: 5px 0px;
+    width: 100%;
+    height: 45px;
+    display: block;
+
+}
+
+.campo > label > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input {
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translateY(-11px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: large;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    background-color: #890000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: white;
+    color: #890000;
+    border: 1px solid #890000;
+}
+
+form > input[type=reset] {
+    display: block;
+    font-size: large;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    background-color: #890000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+form > input[type=reset]:hover {
+    background-color: white;
+    color: #890000;
+    border: 1px solid #890000;
+}
+
+form > a{
+    display: block;
+    font-size: large;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    background-color: #890000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;    
+}
+
+form > a:hover {
+    background-color: white;
+    color: #890000;
+    border: 1px solid #890000;
+}

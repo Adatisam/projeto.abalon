@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('imagens/TmoMXa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 2%;
+
+}
+
+section > p {
+    text-align: justify;
+}
+
+.letra {
+    font-size: larger;
+}
+
+.letra > select, input {
+    font-weight: 700;
+    height: 30px;
+}
+

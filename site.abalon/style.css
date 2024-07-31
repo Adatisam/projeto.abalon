@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    background-image:linear-gradient(180deg, #890000 40%, rgb(243, 247, 187));
+    min-height: 100vh;
+}
+
+header > nav {
+    background-color: transparent;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    margin: auto;
+}
+
+.menu-toggle .nav-icon {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px ;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu > a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.menu > a:hover {
+    background-color: white;
+    color: #890000;
+}
+
+
+.logo1{
+    background-color: #890000;
+    background-size: 100%;
+    position: relative;
+    padding: 1px;
+    height: 200px;
+}
+
+.logo2{
+    background-image: url('imagens/banner2024.png');
+    background-size: 100%;
+    position: absolute;
+    height: 200px;
+    width: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    max-width: 1000px;
+    padding: 5%;
+}
+
+h1{
+    background-color: #890000;
+    color: white;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    font-weight: 900px;
+    padding: 5px;
+}
+
+h2 , h3{
+  font-weight: 900;
+  color: #890000;
+  padding: 5px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 10px;
+    font-weight: 550;
+    padding: 5px;    
+}
+
+div.video{
+    background-image: url('imagens/2.png');
+    background-size: 200px 200px;
+    border-radius: 5px;
+    margin-bottom: 0px -20px 30px -20px;
+    padding: 15px;
+    position: relative;
+    padding-bottom: 52%;
+    margin-bottom: 20px;
+}
+   
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%; 
+}
+
+aside{
+    margin: 5px;
+    padding: 2px;
+    border-radius:  5px;
+}
+
+.ficha{
+    background-color: #890000;
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    font-size: large;
+}
+
+.ficha:active{
+    color: black;
+}
+
+.ficha:hover{
+    background-color: white;
+    color: #890000;
+    border: 1px solid #890000;
+}
+
+footer{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: black;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolagem de Dados</title>
+    <link rel="shortcut icon" href="../abalon/imagens/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="dado.css">
+</head>
+<body>
+    <section>
+        <h1>Como Funciona a Rolagem de Dados</h1>
+
+        <p>Bem-vindo à nossa ferramenta de rolagem de dados online! Aqui você pode simular a rolagem de vários tipos de dados utilizados em jogos de RPG e outros jogos de mesa. Veja como funciona:</p>
+
+        <h2>1. Escolha o Tipo de Dado</h2>
+        <p>Você verá um menu suspenso onde pode selecionar o tipo de dado que deseja rolar. Os dados disponíveis incluem:</p>
+        <ul>
+            <li><strong>D4</strong>: Um dado de 4 lados.</li>
+            <li><strong>D6</strong>: Um dado de 6 lados (o dado tradicional).</li>
+            <li><strong>D8</strong>: Um dado de 8 lados.</li>
+            <li><strong>D10</strong>: Um dado de 10 lados.</li>
+            <li><strong>D12</strong>: Um dado de 12 lados.</li>
+            <li><strong>D20</strong>: Um dado de 20 lados, comumente usado em jogos como Dungeons & Dragons.</li>
+        </ul>
+
+        <h2>2. Selecione a Quantidade de Dados</h2>
+        <p>No campo de quantidade, você pode escolher quantos dados deseja rolar ao mesmo tempo. Por exemplo, se você quiser rolar dois dados de 6 lados, basta escolher "D6" no menu suspenso e inserir "2" no campo de quantidade.</p>
+
+        <h2>3. Rolar os Dados</h2>
+        <p>Depois de selecionar o tipo de dado e a quantidade desejada, clique no botão "Rolar Dados". Nosso sistema irá gerar números aleatórios simulando os resultados dos dados escolhidos.</p>
+
+        <h2>4. Veja os Resultados</h2>
+        <p>Os resultados da rolagem aparecerão logo abaixo do botão. Se você rolou vários dados, os resultados serão listados e separados por vírgulas.</p>
+        <br>
+        <div class="letra">       
+            <label for="dado">Selecione o tipo de dado:</label>
+            <select id="dado">
+                <option value="4">D4</option>
+                <option value="6">D6</option>
+                <option value="8">D8</option>
+                <option value="10">D10</option>
+                <option value="12">D12</option>
+                <option value="20">D20</option>
+            </select>
+        </div>
+
+        <div class="letra">
+            <label for="quantidade">Selecione a quantidade de dados:</label>
+            <input type="number" id="quantidade" value="1" min="1">
+        </div>
+
+        <div class="letra">
+            <input type="button" onclick="rolarDados()" value="Rolar Dados"></input>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

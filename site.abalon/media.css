@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu.active {
+        display: inline-block;
+    }
+}
