@@ -20,17 +20,40 @@ body {
 
 section {
     background-color: white;
-    border-radius: 10px;
-    max-width: 700px;
-    margin: auto;
-    margin-top: 50px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 900px;
     padding: 2%;
-
+    font-size: large;
+    margin: auto;
 }
 
 section > p {
     text-align: justify;
 }
+
+#botao {
+    display: none;
+}
+
+#textoregra {
+    background-color: rgb(235, 188, 70);
+    border-radius: 5px ;
+    padding: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: justify;
+
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/*#textoregra.hovered {
+    background-color:  rgb(235, 188, 70);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    transform: scale(1.2);
+    max-width: 700px;
+
+    //este comando seria para deixar a transição dinâmica//
+}*/ 
 
 .letra {
     font-size: larger;
