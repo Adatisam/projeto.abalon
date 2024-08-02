@@ -19,9 +19,12 @@ function rolarDados() {
     var quantidade = document.getElementById('quantidade').value
     quantidade = parseInt(quantidade)
     var resultados = []
+    var soma = 0
     for (var i = 0; i < quantidade; i++) {
         var resultado = Math.floor(Math.random() * tipoDado) + 1
         resultados.push(resultado)
+        soma += resultado
     }
-    document.getElementById('resultado').innerHTML = "Resultado: " + resultados.join(", ")
+    var resultado = document.getElementById('resultado')
+    resultado.innerHTML = "Resultado: " + resultados.join(", ") + `<br>A soma é de ${soma}`
 }
