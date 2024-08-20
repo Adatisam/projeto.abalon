@@ -13,4 +13,9 @@
     .menu.active {
         display: inline-block;
     }
+
+    .menu > a:hover {
+        transform: none;
+        transition: none;
+    }
 }
