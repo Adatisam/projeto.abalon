@@ -15,6 +15,7 @@
             $login = $_REQUEST['login']?? 0;
             $senha = $_REQUEST['senha']?? 0;
             print "<p>Bem vindo a LUPIDA $nome!, aqui você encontrará diversos itens raros, poder e histórias para contar, mas primeiro que tal um acordo?</p>";
+            //A terminar, loading ... 
         ?>
     </main>
     
