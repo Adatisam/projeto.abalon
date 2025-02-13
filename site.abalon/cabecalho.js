@@ -36,7 +36,6 @@ const links = [
     { href: 'historia.html', text: 'HISTÓRIA' },
     { href: 'materiais.html', text: 'MATERIAIS' },
     { href: 'universo.html', text: 'UNIVERSO PRIMORDIAL' },
-    { href: '#', text: 'BLOG' },
     { href: '../login.abalon/login.html', text: 'LOGIN' }
 ]
 
